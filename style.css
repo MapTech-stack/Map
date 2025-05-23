@@ -51,12 +51,12 @@ body {
   border: none;
   cursor: pointer;
   letter-spacing: 2px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
   background: transparent;
-  border:1px solid #bebcdf;
+  border: 1px solid #bebcdf;
   color: #fff;
 }
 
@@ -134,14 +134,14 @@ body {
 
   .btn-nav-mobile {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     /* margin-inline: auto; */
   }
 
   .primary-navigation {
     /* border: 2px solid blue; */
     position: fixed;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 15%;
     background: hsla(0, 33%, 1%, 0.3);
 
     /* background: hsl(0 0% 100% / 0.2); */
