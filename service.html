@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MapTecht</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="nav-wrapper flex">
+          <!-- site Logo in a div -->
+
+          <a href="index.html" class="site-logo">
+            <img src="images/logo.svg" alt="Navigation LOgo" />
+          </a>
+
+          <!-- Button for small screen to toggle -->
+          <button
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            class="navBar-toggle"
+            id="navbar-toggle"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+
+          <!-- main NAv -->
+
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="primary-navigation flex"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="project.html">projects</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main> 
+        <h1>This is the Service Page</h1>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
