@@ -152,7 +152,7 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .hero-image img {
@@ -186,8 +186,8 @@ body {
   /* text-wrap: pretty; */
 }
 
-.hero-btn{
-  border: 2px solid yellow;
+.hero-btn {
+  /* border: 2px solid yellow; */
 }
 
 @media (min-width: 750px) {
