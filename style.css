@@ -50,6 +50,14 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  letter-spacing: 2px;
+  transition: .2s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  border:1px solid #bebcdf;
+  color: #fff;
 }
 
 .flex {
@@ -82,6 +90,18 @@ body {
 
 .site-logo {
   cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.navbar {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.btn-nav-mobile {
+  display: none;
 }
 
 .nav-wrapper {
@@ -93,19 +113,40 @@ body {
   color: #fff;
   font-weight: 500;
   font-size: min(3vw, 2rem);
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  transition: border-bottom 0.3s ease-in-out;
 }
+
+.primary-navigation a:hover {
+  color: #ffff96;
+  border-bottom: 1px solid #ffff;
+}
+
 .navBar-toggle {
   display: none;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 55em) {
+  .navbar .btn-nav {
+    display: none;
+  }
+
+  .btn-nav-mobile {
+    display: block;
+    width: 100%;
+    /* margin-inline: auto; */
+  }
+
   .primary-navigation {
     /* border: 2px solid blue; */
     position: fixed;
     inset: 0 0 0 30%;
-    background: hsl(0 0% 100% / 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    background: hsla(0, 33%, 1%, 0.3);
+
+    /* background: hsl(0 0% 100% / 0.2); */
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
     flex-direction: column;
     padding: min(20vh, 10rem) 5rem;
     --gap: 2.5rem;
@@ -113,22 +154,29 @@ body {
     transform: translateX(110%);
 
     transition: transform 2s ease-in-out;
-    li a {
-      color: red;
-    }
+  }
+
+  .primary-navigation li {
+    display: grid;
+    place-self: center;
+    align-items: center;
   }
 
   .primary-navigation.open {
     transform: translateX(0%);
   }
 
+  .btn-nav {
+    width: 70%;
+  }
+
   .navBar-toggle {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 16px;
+    top: 30px;
+    right: 30px;
     font-size: 30rem;
-    z-index: 9999;
+    z-index: 99999;
     background-image: url("images/icon-menu.svg");
     width: 1.2rem;
     aspect-ratio: 1;
@@ -145,7 +193,9 @@ body {
 
 .hero-section {
   min-height: 70vh;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+
+  margin-block-start: min(2.5vw, 2rem);
 }
 .hero {
   display: grid;
@@ -186,12 +236,18 @@ body {
   /* text-wrap: pretty; */
 }
 
-.hero-btn {
-  /* border: 2px solid yellow; */
+.btn-register {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 @media (min-width: 750px) {
   .hero {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-text h1 {
+    width: 15ch;
   }
 }
