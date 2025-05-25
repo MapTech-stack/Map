@@ -33,6 +33,11 @@ h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: var(--step-5);
+  font-weight: 700;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -216,8 +221,6 @@ body {
 }
 
 .hero-text h1 {
-  font-size: var(--step-5);
-
   justify-content: center;
   text-align: center;
 }
@@ -250,13 +253,22 @@ body {
 }
 
 /* OUR OFFER SECTION */
-
-.our-offer {
+.our-offer-section {
+  padding: 1rem 0;
   background-color: #ededf3;
   display: grid;
   place-items: center;
-  padding: 1rem 0;
-  margin-bottom: 5rem;
+}
+
+.our-offer {
+  display: grid;
+  place-items: center;
+}
+
+.our-offer h2 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .offers {
@@ -264,7 +276,6 @@ body {
   border-radius: 10px;
   /* gap: var(--step-5); */
   gap: 1.5rem;
-  
 }
 
 .offers img {
@@ -273,7 +284,7 @@ body {
 
 /* desktop part */
 
-@media (min-width: 56em) {
+@media (min-width: 48em) {
   .offers {
     gap: 7rem;
   }
