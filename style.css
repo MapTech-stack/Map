@@ -321,14 +321,21 @@ body {
 
 .about-feature {
   border-radius: 5px;
-  background-color: gray;
+  background-color: rgb(102, 91, 91);
   color: #fff;
   padding: min(20vh, 1rem) 1rem;
 }
 
 .about-feature h3 {
   color: black;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
+}
+
+@media (min-width: 32.5em) and (max-width: 48rem) {
+  .about-features-card {
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  }
 }
 
 @media (min-width: 48em) {
@@ -342,6 +349,6 @@ body {
   }
 
   .about-img {
-    width: 60%;
+    width: 70%;
   }
 }
