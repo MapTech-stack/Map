@@ -253,39 +253,95 @@ body {
 }
 
 /* OUR OFFER SECTION */
-.our-offer-section {
+.our-social-section {
   padding: 1rem 0;
   background-color: #ededf3;
   display: grid;
   place-items: center;
 }
 
-.our-offer {
+.our-social {
   display: grid;
   place-items: center;
 }
 
-.our-offer h2 {
+.our-social h2 {
   color: #333;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-block: 1.5rem;
 }
 
-.offers {
+.social {
   padding: 1rem 1rem;
   border-radius: 10px;
   /* gap: var(--step-5); */
   gap: 1.5rem;
 }
 
-.offers img {
+.social img {
   width: 50px;
 }
 
 /* desktop part */
 
 @media (min-width: 48em) {
-  .offers {
+  .social {
     gap: 7rem;
+  }
+}
+
+/* ABOUT */
+
+.about-section {
+  margin-top: -1rem;
+  background-color: #ededf3;
+  padding-bottom: 6rem;
+}
+
+.about {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 3rem;
+  flex-direction: column-reverse;
+}
+
+.about-content h2 {
+  margin-block: 2rem;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+}
+
+.about-features-card {
+  display: grid;
+  gap: 10px;
+  /* border: 1px solid red; */
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+}
+
+.about-feature {
+  border-radius: 5px;
+  background-color: gray;
+  color: #fff;
+  padding: min(20vh, 1rem) 1rem;
+}
+
+.about-feature h3 {
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 48em) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-section {
+    padding-top: 4rem;
+  }
+
+  .about-img {
+    width: 60%;
   }
 }
