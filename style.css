@@ -192,23 +192,20 @@ body {
 /* Hero Section */
 
 .hero-section {
-  min-height: 70vh;
-  /* margin-top: 2rem; */
-
+  /* min-height: 70vh; */
   margin-block-start: min(2.5vw, 2rem);
+  margin-bottom: 5rem;
 }
 .hero {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
-  /* border: 2px solid green; */
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  /* border: 2px solid yellow; */
   object-fit: cover;
 }
 
@@ -216,8 +213,6 @@ body {
   display: grid;
   gap: 1rem;
   place-items: center;
-
-  /* border: 2px solid red; */
 }
 
 .hero-text h1 {
@@ -242,6 +237,8 @@ body {
   color: #fff;
 }
 
+/* desktop */
+
 @media (min-width: 750px) {
   .hero {
     grid-template-columns: 1fr 1fr;
@@ -249,5 +246,35 @@ body {
 
   .hero-text h1 {
     width: 15ch;
+  }
+}
+
+/* OUR OFFER SECTION */
+
+.our-offer {
+  background-color: #ededf3;
+  display: grid;
+  place-items: center;
+  padding: 1rem 0;
+  margin-bottom: 5rem;
+}
+
+.offers {
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  /* gap: var(--step-5); */
+  gap: 1.5rem;
+  
+}
+
+.offers img {
+  width: 50px;
+}
+
+/* desktop part */
+
+@media (min-width: 56em) {
+  .offers {
+    gap: 7rem;
   }
 }
