@@ -1,5 +1,15 @@
 /*  */
 :root {
+  --primary-color: #0057ff;
+  --accent-color: #00d084;
+  --h1-color: #bebcdf;
+  --text-color: #ddd;
+  --bg-color: #f9f9f9;
+  --bg-color-2: #0a0e1f;
+  --light-gray: #ddd;
+  --link-gray: #333;
+  --link-hover: rgba(5, 22, 39, 0.877);
+
   --step--2: clamp(0.7813rem, 0.7469rem + 0.1717vw, 0.88rem);
   --step--1: clamp(0.9375rem, 0.881rem + 0.2826vw, 1.1rem);
   --step-0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
@@ -16,12 +26,21 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--bg-color-2);
+
+  color: var(--text-color);
+
+  line-height: 1.6;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: var(--link-gray);
 }
 h1,
 h2,
@@ -36,18 +55,13 @@ h6 {
 h1 {
   font-size: var(--step-5);
   font-weight: 700;
+  color: var(--h1-color);
 }
 
 img {
   max-width: 100%;
   display: block;
   height: auto;
-}
-
-body {
-  background-color: #0a0e1f;
-  color: #bebcdf;
-  line-height: 1.6;
 }
 
 .btn {
@@ -89,14 +103,17 @@ body {
 }
 
 .site-header {
-  background: rgba(72, 117, 46, 0.411);
+  /* background: rgba(72, 117, 46, 0.411); */
+  background: #fff;
+  border-bottom: 1px solid var(--light-gray);
   padding-block: 1rem;
 }
 
 .site-logo {
   cursor: pointer;
-  color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .navbar {
@@ -115,7 +132,6 @@ body {
 }
 
 .primary-navigation a {
-  color: #fff;
   font-weight: 500;
   font-size: min(3vw, 2rem);
   font-size: var(--step-0);
@@ -124,7 +140,7 @@ body {
 }
 
 .primary-navigation a:hover {
-  color: #ffff96;
+  color: var(--link-hover);
   border-bottom: 1px solid #ffff;
 }
 
@@ -255,8 +271,9 @@ body {
 }
 
 /* OUR OFFER SECTION */
+
 .our-social-section {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   background-color: #ededf3;
   display: grid;
   place-items: center;
@@ -293,21 +310,27 @@ body {
 }
 
 /* Features */
+.features {
+  padding-block: 5rem;
+  color: #333;
+}
 
 .feature-card {
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .feature-card img {
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .features-content h2 {
   /* margin-inline: auto; */
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  margin-bottom: 1.4rem;
+  font-size: 2.5rem;
   align-items: center;
+  color: #fff;
 }
 
 .features-content h2 span {
@@ -316,7 +339,7 @@ body {
 
 .features-content-cards {
   display: grid;
-  gap: 0.5rem;
+  gap: var(--gap, 1rem);
   /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr));
 }
@@ -332,58 +355,47 @@ body {
 
 /* Tablets (768px to 1024px) */
 
-
-
-@media only screen and (min-width: 520px) and (max-width: 1024px) {
+@media only screen and (min-width: 500px) and (max-width: 1023px) {
   /* Styles for tablets */
 
   .feature-card {
-    /* border: 1px solid red; */
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
   }
 
-  .feature-card img {
-    width: 50%; /* make image and content equal width */
+  .features-content {
+    width: 100%;
   }
 
   .features-content-cards {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    --gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  }
+
+  .features-content-card {
+    padding: 1.5em 2em;
   }
 }
 
-
-
-@media (width: 1024px) {
+@media (min-width: 1023px) {
   .feature-card {
-    border: 1px solid red;
-  }
-  .features-content-cards {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-  }
-} 
-
-
-@media (min-width: 1025px){
-  
-    .feature-card {
-    /* border: 1px solid red; */
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    align-items: center;
     justify-content: center;
-    max-width: 100%;
+    /* align-items: center; */
+    --gap: 4rem;
   }
 
-   .feature-card img {
-    width: 50%; /* make image and content equal width */
+  .feature-card img {
+    max-width: 40%;
+    
   }
-.features-content-cards {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+
+  .features-content {
+    width: 50%;
+  }
+
+  .features-content-cards {
+    /* border: 3px solid red; */
+    --gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
   }
 }
