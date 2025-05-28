@@ -396,6 +396,7 @@ img {
   .features-content-cards {
     /* border: 3px solid red; */
     --gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    border: 2px solid red;
   }
 }
