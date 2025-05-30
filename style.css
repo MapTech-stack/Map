@@ -503,3 +503,66 @@ img {
 
   border-radius: 5px;
 }
+
+.testimonial-carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  margin-block: 4rem;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  touch-action: pan-y;
+}
+
+.testimonial {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  color: #333;
+}
+.testimonial h4 {
+  margin-block: 1rem;
+}
+
+.testimonial img {
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-inline: auto;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
