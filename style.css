@@ -527,6 +527,7 @@ img {
   margin: 10px;
   text-align: center;
   color: #333;
+  height: fit-content;
 }
 .testimonial h4 {
   margin-block: 1rem;
