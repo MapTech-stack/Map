@@ -520,6 +520,12 @@ img {
   border-radius: 5px;
 }
 
+.why-us-wrapper-card h3{
+color: var(--link-gray);
+}
+
+
+
 .testimonial-carousel {
   position: relative;
   max-width: 600px;
@@ -615,7 +621,7 @@ footer {
   left: 0;
   bottom: -5px;
   height: 2px;
-  width: 50%;
+  width: 20%;
   background: var(--accent-color);
 }
 
