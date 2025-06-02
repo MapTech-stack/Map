@@ -155,7 +155,6 @@ img {
   width: 100%;
 }
 
-
 .site-header {
   /* background: rgba(72, 117, 46, 0.411); */
   background: #fff;
@@ -659,14 +658,14 @@ footer {
 .social-links {
   /* display: flex; */
   /* justify-content: space-between; */
-  width: 90%;
+  width: 100%;
   margin-top: 1.5rem;
   cursor: pointer;
 }
 
 .social-links i {
   background-color: white;
-  height: 30px;
+  height: 25px;
   aspect-ratio: 1;
 
   border-radius: 50%;
