@@ -1,0 +1,75 @@
+.about-header {
+  display: grid;
+  place-items: center;
+  background-image: url("images/image1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 4rem;
+  position: relative;
+}
+
+.about-header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: #fff;
+}
+
+.about-header h1 {
+  z-index: 7;
+}
+
+/* experience */
+
+.experience {
+  padding-block: 4rem;
+}
+
+.experience-wrapper {
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+}
+
+.experience-content {
+  background-color: gray;
+  padding: 2.5rem 2.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.experience-image img {
+  border-radius: 0 80px 0 80px;
+  /* position: relative; */
+}
+
+.experience-content::after {
+  content: "10+ Years Experience ";
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+
+  position: absolute;
+
+  background-color: rgba(30, 30, 117, 0.822);
+  bottom: -40px;
+  left: 10%;
+  border-radius: 0 30px 0 30px;
+
+  /* height: 50px; */
+
+  padding: 1rem 2.5rem;
+
+  align-self: center;
+  justify-content: center;
+}

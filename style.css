@@ -169,11 +169,13 @@ img {
   font-size: var(--step-0);
   text-transform: uppercase;
   transition: border-bottom 0.3s ease-in-out;
+
+  color: var(--link-gray);
 }
 
 .primary-navigation a:hover {
   color: var(--link-hover);
-  border-bottom: 1px solid var(--white-bg);
+  border-bottom: 1px solid blue;
 }
 
 .navBar-toggle {
@@ -209,6 +211,14 @@ img {
     display: grid;
     place-self: center;
     align-items: center;
+  }
+
+  .primary-navigation a {
+    color: var(--white-bg);
+  }
+
+  .primary-navigation a:hover {
+    color: var(--white-bg);
   }
 
   .primary-navigation.open {
@@ -520,11 +530,9 @@ img {
   border-radius: 5px;
 }
 
-.why-us-wrapper-card h3{
-color: var(--link-gray);
+.why-us-wrapper-card h3 {
+  color: var(--link-gray);
 }
-
-
 
 .testimonial-carousel {
   position: relative;
@@ -626,11 +634,30 @@ footer {
 }
 
 .social-links {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   width: 90%;
 
   margin-top: 1.5rem;
+}
+
+.social-links i {
+  background-color: white;
+  height: 30px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  color: black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-brands.fa-facebook {
+  color: blue;
+}
+.fa-brands.fa-youtube {
+  color: red;
 }
 
 .footer-sub-links {
