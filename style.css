@@ -135,6 +135,27 @@ img {
   margin-inline: auto;
 }
 
+.page-header {
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 4rem;
+  position: relative;
+}
+
+.page-header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
 .site-header {
   /* background: rgba(72, 117, 46, 0.411); */
   background: #fff;
@@ -639,8 +660,8 @@ footer {
   /* display: flex; */
   /* justify-content: space-between; */
   width: 90%;
-
   margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 .social-links i {
