@@ -205,6 +205,7 @@ img {
     transform: translateX(110%);
 
     transition: transform 2s ease-in-out;
+    z-index: 9990;
   }
 
   .primary-navigation li {
