@@ -54,7 +54,7 @@ h1 {
 }
 
 .experience-image img {
-  border-radius: 0 80px 0 80px;
+  border-radius: 0 40px 0 40px;
 }
 
 .experience-content::after {
@@ -82,5 +82,103 @@ h1 {
     top: -90%;
 
     right: 0;
+  }
+}
+
+/* qualities */
+.qualities {
+  padding-block: 5rem;
+}
+.qualities-cards {
+  display: grid;
+  gap: 3rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr));
+}
+
+.qualities-card {
+  display: grid;
+  place-items: center;
+}
+
+/* our-way */
+.our-way-wrapper {
+  display: grid;
+  gap: 2rem 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+}
+
+.our-way-content {
+  display: grid;
+  gap: 1.5rem;
+}
+.our-way-content__header {
+  display: grid;
+  margin-top: auto;
+  width: fit-content;
+}
+
+.our-way-content__body-cards {
+  display: grid;
+  gap: 2rem;
+}
+
+.our-way-content__body-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.our-way-content__body-card h2 {
+  border: 1px solid rgba(225, 125, 239, 0.4);
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.our-way-content button {
+  place-self: center;
+  color: #ffff;
+}
+
+/* newsletter */
+
+.newsletter {
+  /* background-color: green; */
+  border: 2px dashed green;
+  margin-block: 3rem;
+  width: 95%;
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  border-radius: 10px;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+}
+.newsletter h3 {
+  margin-block-end: 10px;
+  color: #fff;
+}
+
+.newletter-input input {
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.newletter-input button {
+  color: #ffff;
+}
+
+.newletter p {
+  color: black;
+}
+
+@media (width >500px) {
+  .newsletter {
+    width: 60%;
   }
 }
