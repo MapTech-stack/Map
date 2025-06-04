@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MapTecht</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="services.css" />
   </head>
   <body>
     <header class="site-header">
@@ -12,10 +14,7 @@
         <div class="nav-wrapper flex">
           <!-- site Logo in a div -->
 
-          <a href="index.html" class="site-logo">
-            <!-- <img src="images/logo.svg" alt="Navigation LOgo" /> -->
-            MapTech
-          </a>
+          <a href="index.html" class="site-logo"> MapTech </a>
 
           <!-- Button for small screen to toggle -->
           <button
@@ -29,25 +28,214 @@
 
           <!-- main NAv -->
 
-          <nav>
+          <nav class="navbar">
             <ul
               id="primary-navigation"
               data-visible="false"
               class="primary-navigation flex"
             >
-              <li><a href="index.html">Home</a></li>
+              <!-- <li><a href="index.html">Home</a></li> -->
               <li><a href="about.html">About</a></li>
               <li><a href="project.html">projects</a></li>
               <li><a href="service.html">Services</a></li>
               <li><a href="contact.html">Contacts</a></li>
+              <button class="btn btn-nav-mobile">Join us</button>
             </ul>
+            <button class="btn btn-nav">Join us</button>
           </nav>
         </div>
       </div>
     </header>
+
     <main>
-      <h1>This is the Service Page</h1>
+      <section class="page-header">
+        <div class="wrapper">
+          <h3 class="line">What we offer</h3>
+          <h1>Our Services</h1>
+        </div>
+      </section>
+
+      <section class="service-hero">
+        <div class="wrapper service-hero-wrapper">
+          <div class="service-hero-content">
+            <h3 class="line">What we offer</h3>
+            <h1>We Take Your Business to the next level</h1>
+          </div>
+          <div class="service-hero-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+              quas amet cum culpa, suscipit dicta?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              facilis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-information">
+        <div class="wrapper">
+          <div class="service-info-wrapper">
+            <!-- card 1 -->
+            <div class="service-info__card">
+              <img src="images/icon-planning.svg" alt="" />
+              <h3>Web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Tenetur, corporis!
+              </p>
+            </div>
+
+            <!-- card 2 -->
+            <div class="service-info__card">
+              <img src="images/icon-planning.svg" alt="" />
+              <h3>Web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Tenetur, corporis!
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div class="service-info__card">
+              <img src="images/icon-planning.svg" alt="" />
+              <h3>Web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Tenetur, corporis!
+              </p>
+            </div>
+            <!-- card 4 -->
+            <div class="service-info__card">
+              <img src="images/icon-planning.svg" alt="" />
+              <h3>Web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Tenetur, corporis!
+              </p>
+            </div>
+            <!-- card 5 -->
+            <div class="service-info__card">
+              <img src="images/icon-planning.svg" alt="" />
+              <h3>Web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Tenetur, corporis!
+              </p>
+            </div>
+            <!-- card 6 -->
+            <div class="service-info__card">
+              <img src="images/icon-planning.svg" alt="" />
+              <h3>Web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Tenetur, corporis!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <h3>Subscribe to our Newsletter</h3>
+
+        <div class="newletter-input flex">
+          <input type="email" name="Email" id="email" placeholder="Email" />
+          <button class="btn">Subscribe</button>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni?
+        </p>
+      </section>
     </main>
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer-wrapper">
+          <!-- 1 -->
+          <div class="footer-sub">
+            <a href="index.html" class="site-logo"> MapTech </a>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
+              quidem.
+            </p>
+            <div class="social-links flex">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-youtube"></i>
+
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="footer-sub">
+            <h2>Get in Touch</h2>
+            <div class="footer-sub-links">
+              <div class="footer-sub-link">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">Get our Address</a>
+              </div>
+
+              <div class="footer-sub-link">
+                <i class="fa-solid fa-phone"></i>
+                <p>+234-8137273839</p>
+              </div>
+
+              <div class="footer-sub-link">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">Click here to Email</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="footer-sub">
+            <h2>Company</h2>
+            <div class="footer-sub-links">
+              <a href="">About</a>
+              <a href="">News</a>
+              <a href="">Pricing</a>
+              <a href="">Team</a>
+            </div>
+          </div>
+
+          <!-- 3 ends -->
+
+          <!-- 4  -->
+          <div class="footer-sub">
+            <h2>Quick Links</h2>
+            <div class="footer-sub-links test">
+              <a href="">Blog</a>
+              <a href="">Support</a>
+              <a href="">FAQ</a>
+              <a href="">Testimonials</a>
+            </div>
+          </div>
+
+          <!-- 4 ends -->
+
+          <!-- 5 -->
+          <div class="footer-sub">
+            <h2>Operational Time</h2>
+            <div class="footer-sub-links">
+              <div class="footer-sub-link">
+                <p>Mon-Sat</p>
+                <p>9AM-4PM</p>
+              </div>
+              <div class="footer-sub-link">
+                <p>Sunday</p>
+                <p>Closed</p>
+              </div>
+            </div>
+          </div>
+          <!-- 5 ends -->
+        </div>
+
+        <!-- the end -->
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
