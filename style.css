@@ -179,6 +179,10 @@ img {
   display: none;
 }
 
+.navbar .btn-nav {
+  color: #333;
+}
+
 .nav-wrapper {
   align-items: center;
   justify-content: space-between;
@@ -396,7 +400,7 @@ img {
 .features-content-cards {
   display: grid;
   gap: var(--gap, 1rem);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
 }
 
 .features-content-card {
@@ -404,6 +408,7 @@ img {
   padding: 0.8em;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.65);
+  text-align: center;
 }
 
 .content-card img {
