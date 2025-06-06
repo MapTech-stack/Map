@@ -128,17 +128,70 @@ h1 {
 /* newsletter */
 
 .newsletter {
-  /* background-color: green; */
-  border: 2px dashed green;
+  background: #1c1f2b;
+  /* border: 2px dashed #333; */
+  width: 90%;
   margin-block: 3rem;
-  width: 95%;
   display: grid;
   gap: 1rem;
   place-items: center;
   border-radius: 10px;
   margin-inline: auto;
   padding: 1rem 2rem;
+  position: relative;
 }
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.newsletter::after,
+.newsletter::before {
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 50%,
+    #333,
+    #006aff,
+    #ff4545
+  );
+
+  /* background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    blue,
+    grey
+  ); */
+  z-index: -1;
+  padding: 6px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.newsletter::before {
+  filter: blur(1rem);
+  opacity: 0.25;
+}
+
 .newsletter h3 {
   margin-block-end: 10px;
   color: #fff;
